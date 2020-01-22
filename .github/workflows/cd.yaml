@@ -1,0 +1,15 @@
+name: cd
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  cd:
+    name: cd
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: pull code
+      uses: actions/checkout@v1
