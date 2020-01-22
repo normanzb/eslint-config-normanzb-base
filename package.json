@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-normanzb-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives .",
+    "preversion": "npm i && npm run lint",
+    "postversion": "push-current-branch-and-latest-tag"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "normanzb-build-scripts": "0.0.5"
+  }
+}
